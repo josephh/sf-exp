@@ -1,0 +1,23 @@
+<template>
+  <div class="slds-m-around_small">
+    <lightning-card titl="Calculator" icon-name="custom:custom34">
+      <lightning-input
+        value={number1}
+        name="number1"
+        label="Number 1"
+        placeholder="Enter your number here..."
+        onchange={handleChange}>
+      </lightning-input>
+      <lightning-input
+        value={number2}
+        name="number2"
+        label="Number 2"
+        placeholder="Enter your number  here..."
+        onchange={handleChange}>
+      </lightning-input>
+      <lightning-button label="Add" onclick={add}></lightning-button>
+      &nbsp;
+      <lightning-button label="Subtract" onclick={subtract}></lightning-button>
+    </lightning-card>
+  </div>
+</template>

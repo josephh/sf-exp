@@ -1,0 +1,13 @@
+<template>
+  <p if:true={isValGreaterThanZero}>
+    <strong>Some text to display if isValGreaterThanZero = TRUE</strong>
+  </p>
+  <p if:false={isValGreaterThanZero}>
+    <strong>Some text to display if isValGreaterThanZero = FALSE</strong>
+  </p>
+  <p>
+    <strong>Val currently set to: {val}</strong>
+  </p>
+  <lightning-button label="Increment" onclick={incrementVal}></lightning-button>
+  <lightning-button label="Decrement" onclick={decrementVal}></lightning-button>
+</template>

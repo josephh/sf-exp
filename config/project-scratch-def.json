@@ -1,0 +1,8 @@
+{
+  "orgName": "jjobbings company",
+  "edition": "Developer",
+  "features": [
+    "Communities",
+    "CascadeDelete"
+  ]
+}
