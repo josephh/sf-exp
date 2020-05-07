@@ -5,5 +5,9 @@
   <!-- c:helloEvents/ -->
   <!-- <c:ifElseDemo /> -->
   <!-- <c:iteratorDemo /> -->
-  <c:calculator />
+  <!-- <c:calculator /> -->
+  <!-- <c:propsDemo /> -->
+  <!-- <c:hooksDemo /> -->
+  <!-- <c:parentDemo /> -->
+  <c:slotsparent></c:slotsparent>
 </aura:application>
