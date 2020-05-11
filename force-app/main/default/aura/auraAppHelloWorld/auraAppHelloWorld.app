@@ -9,5 +9,6 @@
   <!-- <c:propsDemo /> -->
   <!-- <c:hooksDemo /> -->
   <!-- <c:parentDemo /> -->
-  <c:slotsparent></c:slotsparent>
+  <!-- <c:slotsparent></c:slotsparent> -->
+  <c:contactList />
 </aura:application>

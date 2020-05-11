@@ -1,3 +1,11 @@
 <template>
-    
+  <lightning-card title="Contact list" icon-name="custom:custom34">
+    <div class="">
+      <template if:true={contacts}>
+        <template for:each={contacts} for:item="contact">
+          <c-contac-tile contact={contact} key={contact.id}></c-contac-tile>
+        </template>
+      </template>
+    </div>
+  </lightning-card>
 </template>
