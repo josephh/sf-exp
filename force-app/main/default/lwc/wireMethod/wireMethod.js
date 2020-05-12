@@ -1,14 +1,20 @@
-import { LightningElement, wire, api} from 'lwc';
+import { LightningElement, wire, api, track} from 'lwc';
 import getAllCases from '@salesforce/apex/CaseController.getAllCases';
 
 export default class WireMethod extends LightningElement {
 
   @wire(getAllCases) cases;
+  @track subject
+
+  handleChange(e) {
+    const s = e.target.value
+    this.subject = s
+  }
 
   @api records
   @api err
 
-  @wire(getAllCases) wiredCases({ data, error }) {
+  @wire(getAllCases, {subject: '$subject'}) wiredCases({ data, error }) {
     if(data) {
       this.records = data;
       this.err = undefined;

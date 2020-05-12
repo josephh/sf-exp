@@ -4,7 +4,8 @@ public with sharing class CaseController {
     }
 
     @AuraEnabled(cacheable = true)
-    public static List<Case> getAllCases() {
-      return [Select Id, Subject, Description, Status, Origin From Case];
+    public static List<Case> getAllCases(String subject) {
+      String key = '%' + subject + '%';
+      return [Select Id, Subject, Description, Status, Origin From Case WHERE subject like: key];
     }
 }

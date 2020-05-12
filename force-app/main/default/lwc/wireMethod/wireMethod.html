@@ -1,9 +1,17 @@
 <template>
   <lightning-card title="Wired 2" icon-name="standard:case">
+    <div class="">
+      <lightning-input value={subject} label="Search case by subject" onchange={handleChange}></lightning-input>
+    </div>
     <div class="slds-m-around_small">
       <template for:each={records} for:item="r">
         <p key={r.id}>
           {r.Subject} : {r.Status}
+        </p>
+      </template>
+      <template if:false={records}>
+        <p>
+          No matching records.<br>
         </p>
       </template>
       <template if:true={err}>
