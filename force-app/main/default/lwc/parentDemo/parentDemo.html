@@ -3,6 +3,14 @@
     <strong>Parent component</strong>
   </div>
   <div class="slds-m-around_small">
-    <c-child-demo onsimple={handleSimpleEvent}> </c-child-demo>
+    <c-child-demo
+      name="dad"
+      pagenumbe="set-by-parent-1234"
+      contact="j@gmtila.com"
+      onsimple={handleSimpleEvent}> </c-child-demo>
+  </div>
+  <div class="slds-m-around_small">
+    <lightning-button label="Change Date" onclick={handleClick} variant="brand">
+    </lightning-button>
   </div>
 </template>

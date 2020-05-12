@@ -8,7 +8,8 @@
   <!-- <c:calculator /> -->
   <!-- <c:propsDemo /> -->
   <!-- <c:hooksDemo /> -->
-    <c:parentDemo />
+  <!-- <c:parentDemo /> -->
   <!-- <c:slotsparent></c:slotsparent> -->
   <!-- <c:contactList -->
+<c:wireMethod />
 </aura:application>

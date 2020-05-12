@@ -1,0 +1,30 @@
+<template>
+  <lightning-card title="Wired 2" icon-name="standard:case">
+    <div class="slds-m-around_small">
+      <template for:each={records} for:item="r">
+        <p key={r.id}>
+          {r.Subject} : {r.Status}
+        </p>
+      </template>
+      <template if:true={err}>
+        <p>
+          An error occurred :-(<br>
+        </p>
+      </template>
+    </div>
+  </lightning-card>
+  <lightning-card title="Case Details" icon-name="standard:case">
+    <div class="slds-m-around_small">
+        <template for:each={cases.data} for:item="i">
+          <p key={i.id}>
+            {i.Subject} : {i.Status}
+          </p>
+        </template>
+        <template if:true={cases.error}>
+          <p>
+            An error occurred :-(<br>
+          </p>
+        </template>
+    </div>
+  </lightning-card>
+</template>
