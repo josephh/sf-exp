@@ -11,5 +11,6 @@
   <!-- <c:parentDemo /> -->
   <!-- <c:slotsparent></c:slotsparent> -->
   <!-- <c:contactList -->
-<c:wireMethod />
+  <!-- <c:wireMethod /> -->
+  <c:apexImperativeCall />
 </aura:application>

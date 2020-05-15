@@ -14,7 +14,8 @@ export default class WireMethod extends LightningElement {
   @api records
   @api err
 
-  @wire(getAllCases, {subject: '$subject'}) wiredCases({ data, error }) {
+  @wire(getAllCases, {subject: this.subject})
+  wiredCases({ data, error }) {
     if(data) {
       this.records = data;
       this.err = undefined;
