@@ -1,0 +1,25 @@
+<template>
+  <lightning-card title="Apex imp call" icon-name="standard:case">
+    <div class="">
+      <lightning-input value={subject} label="Search case by input" onchange={handleChange}></lightning-input>
+      <lightning-button label="Load Cases" onclick={handleLoad}></lightning-button>
+    </div>
+    <div class="slds-m-around_small">
+      <template for:each={records} for:item="r">
+        <p key={r.id}>
+          {r.Subject} : {r.Status}
+        </p>
+      </template>
+      <template if:false={records}>
+        <p>
+          No matching records.<br>
+        </p>
+      </template>
+      <template if:true={error}>
+        <p>
+          An error occurred :-(<br>
+        </p>
+      </template>
+    </div>
+  </lightning-card>
+</template>
